@@ -102,14 +102,14 @@ export default function App() {
       {/* Main Full-Viewport Background Image & Atmosphere */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-700 scale-105"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-700"
           style={{
-            backgroundImage: `url('/kitu-background.jpg'), url('/kitu-background.jpg.webp')`,
+            backgroundImage: `url('/kitu-background.jpg')`,
           }}
         />
-        {/* Subtle Dark Vignette & Gradient Overlay for Contrast & Readability */}
-        <div className="absolute inset-0 bg-[#0a0514]/75 backdrop-blur-[2px]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,_rgba(88,28,135,0.3)_0%,_rgba(10,5,20,0.85)_100%)]" />
+        {/* Subtle Dark Vignette & Gradient Overlay for High Contrast & Crystal-Clear UI Readability */}
+        <div className="absolute inset-0 bg-[#0a0514]/65 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,_rgba(88,28,135,0.25)_0%,_rgba(10,5,20,0.8)_100%)]" />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-500/15 rounded-full blur-[130px] animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/15 rounded-full blur-[130px] animation-delay-2000 animate-pulse" />
       </div>
