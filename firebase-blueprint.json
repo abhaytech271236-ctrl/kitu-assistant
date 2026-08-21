@@ -1,0 +1,30 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user preferences and context for the AI assistant.",
+      "type": "object",
+      "properties": {
+        "preferences": {
+          "type": "object",
+          "description": "A map of user preferences (e.g., interests, nicknames)."
+        },
+        "memory": {
+          "type": "string",
+          "description": "A short summary of past interactions to maintain continuity."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["updatedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User specific data for personalization."
+    }
+  }
+}
