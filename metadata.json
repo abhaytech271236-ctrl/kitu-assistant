@@ -1,6 +1,6 @@
 {
   "name": "Kitu AI Assistant",
-  "description": "A real-time, witty, and sassy AI voice assistant powered by Gemini Live.",
+  "description": "Mission-based student development AI mentor powered by Gemini Live for exploration, computational leadership, and self-reflection.",
   "requestFramePermissions": ["microphone"],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
